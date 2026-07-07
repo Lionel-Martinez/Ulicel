@@ -41,3 +41,13 @@
   opacity:0;
   animation:kenburns 18s infinite;
 }
+
+.banner-img:nth-child(1){
+  animation-delay:0s;
+}
+.banner-img:nth-child(2){
+  animation-delay:6s;
+}
+.banner-img:nth-child(3){
+  animation-delay:12s;
+}
