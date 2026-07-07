@@ -15,4 +15,10 @@
   background:#0f172a;
 }
 
+.banner-texto{
+  width:50%;
+  color:#fff;
+  animation:aparecer 1s ease;
 }
+
+  
