@@ -95,6 +95,15 @@
     left: 50%;
     transform: translateX(-50%);
 }
+
+.descripcion{
+    text-align: center;
+    color: #fff;
+    margin-bottom: 60px;
+    margin-top: 20px;
+    font-size: 1.15rem;
+}
+
 .card{
   width:50%;
   color:#fff;
