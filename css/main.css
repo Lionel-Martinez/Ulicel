@@ -79,10 +79,22 @@
   background:#0f172a;
 }
 .container{
-  width:50%;
+  width:100%;
   color:#fff;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  
 }
-
+.nuestros-servicios{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+}
 .card{
   width:50%;
   color:#fff;
