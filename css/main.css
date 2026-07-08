@@ -104,8 +104,19 @@
     font-size: 1.15rem;
 }
 
+.servicios-cards{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+
 .card{
-  width:50%;
-  color:#fff;
+    padding: 45px 35px;
+    border-radius: 16px;
+    border: 1px solid;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
 }
 
