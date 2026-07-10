@@ -4,6 +4,7 @@
     padding:0;
     box-sizing:border-box;
 }
+
 /* Inicio */
 .banner{
   width:100%;
@@ -67,6 +68,7 @@
   35%  { opacity: 0; }
   100% { opacity: 0; }
 }
+
 /* Servicios */
 .servicios{
   width: 100%;
@@ -124,4 +126,71 @@
 .reparaciones{
     font-size: 1.3rem;
     margin-bottom: 12px;
+}
+
+/* Por qué elegirnos */
+
+.porque-elegirnos-section{
+  width: 100%;
+  background: #0f172a;
+  padding: 100px 9% 60px;
+}
+
+.container-pqe{
+  width: 100%;
+  color: #fff;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.por-que-elegirnos{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.titulo-pqe{
+    color: #fff;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.sub-titulo-pqe{
+    text-align: center;
+    color: #fff;
+    margin-bottom: 60px;
+    margin-top: 20px;
+    font-size: 1.15rem;
+}
+
+.descripcion-pqe{
+    text-align: center;
+    color: #fff;
+    margin-bottom: 60px;
+    margin-top: 20px;
+    font-size: 1.15rem;
+}
+
+.pqe-cards{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.card-pqe{
+    padding: 45px 35px;
+    border-radius: 16px;
+    border: 1px solid rgba(255,255,255,0.15);
+    background: rgba(255,255,255,0.03);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.icono-pqe{
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
 }
