@@ -306,3 +306,69 @@
   flex: 1;
   text-align: center;
 }
+
+/* Opiniones */
+
+.opiniones{
+  width: 100%;
+  padding: 100px 9% 60px;
+  background: #0f172a;
+}
+.titulo-opiniones{
+    color: #fff;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.descripcion-opiniones{
+    text-align: center;
+    color: #fff;
+    margin-bottom: 60px;
+    margin-top: 20px;
+    font-size: 1.15rem;
+}
+
+.card-container{
+  display: flex;
+  gap: 20px;
+  width: fit-content;    
+  animation: desplazar 30s linear infinite;
+}
+
+.card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  max-width: 300px;
+  border: 1px solid #eee;
+  flex-shrink: 0;
+}
+
+.stars {
+  color: #f1c40f;
+  margin-bottom: 15px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  background-color: #58a46c; /* Color verde de la imagen */
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.carrusel-wrapper{
+  width: 100%;
+  overflow: hidden;
+}
+
+@keyframes desplazar{
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
