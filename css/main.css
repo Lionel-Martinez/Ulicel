@@ -5,16 +5,30 @@
     box-sizing:border-box;
 }
 
+/* tipografia global */
+html, body{
+    height: 100%;
+    overflow-x: hidden;
+    font-family: 'IBM Plex Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4{
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+
 /* Inicio */
 .banner{
   width:100%;
-  height:100vh;
+  min-height: calc(100vh - 72px);
   display:flex;
   align-items:center;
   justify-content:space-between;
-  padding:0 9%;
+  padding:60px 9%;
   overflow:hidden;
   background:#0f172a;
+  gap: 40px;
 }
 
 .banner-texto{
@@ -26,18 +40,24 @@
 .banner-texto h1{
   font-size:4rem;
   margin-bottom:20px;
+  line-height: 1.1;
 }
 
-.banner-texto p span{
+.banner-texto p{
   font-size:1.1rem;
   line-height:1.7;
   margin-bottom:30px;
 }
 
+@keyframes aparecer{
+  from{ opacity: 0; transform: translateY(20px); }
+  to{ opacity: 1; transform: translateY(0); }
+}
+
 .banner-imagen{
   position:relative;
   width:100%;
-  height:100%;
+  height: 240px;
   border-radius:20px;
   overflow:hidden;
 }
@@ -68,13 +88,35 @@
   35%  { opacity: 0; }
   100% { opacity: 0; }
 }
+/* Títulos de seccion: patron compartido para todas las secciones */
 
-/* Servicios */
-.servicios{
-  width: 100%;
-  padding: 100px 9% 60px;
+.nuestros-servicios,
+.titulo-pqe,
+.titulo-np,
+.titulo-opiniones,
+.titulo-contacto{
+  color: #fff;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
 }
 
+.descripcion,
+.descripcion-pqe,
+.descripcion-np,
+.descripcion-opiniones,
+.descripcion-contacto{
+  text-align: center;
+  color: #cbd5e1;
+  margin-bottom: 60px;
+  margin-top: 20px;
+  font-size: 1.15rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Servicios */
 .servicios-section{
   width: 100%;
   background: #0f172a;
@@ -82,50 +124,36 @@
 
 .container{
   width: 100%;
-  color: #fff;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 40px 20px;
-}
-.nuestros-servicios{
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 15px;
-}
-
-.descripcion{
-    text-align: center;
-    color: #fff;
-    margin-bottom: 60px;
-    margin-top: 20px;
-    font-size: 1.15rem;
+  padding: 80px 20px 60px;
 }
 
 .servicios-cards{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  gap: 20px;
 }
 
 .servicio-img{
-    width: 80px;
-    height: 80px;
-    margin: 0 auto 20px;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
 }
 
 .card{
-    padding: 45px 35px;
-    border-radius: 16px;
-    border: 1px solid rgba(255,255,255,0.15);
-    background: rgba(255,255,255,0.03);
-    text-align: center;
-    position: relative;
-    overflow: hidden;
+  padding: 45px 35px;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.15);
+  background: rgba(255,255,255,0.03);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .reparaciones{
-    font-size: 1.3rem;
-    margin-bottom: 12px;
+  font-size: 1.3rem;
+  margin-bottom: 12px;
 }
 
 /* Por qué elegirnos */
@@ -133,44 +161,13 @@
 .porque-elegirnos-section{
   width: 100%;
   background: #0f172a;
-  padding: 100px 9% 60px;
+  padding: 80px 9% 60px;
 }
 
 .container-pqe{
   width: 100%;
-  color: #fff;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 40px 20px;
-}
-
-.por-que-elegirnos{
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 15px;
-}
-
-.titulo-pqe{
-    color: #fff;
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 15px;
-}
-
-.sub-titulo-pqe{
-    text-align: center;
-    color: #fff;
-    margin-bottom: 60px;
-    margin-top: 20px;
-    font-size: 1.15rem;
-}
-
-.descripcion-pqe{
-    text-align: center;
-    color: #fff;
-    margin-bottom: 60px;
-    margin-top: 20px;
-    font-size: 1.15rem;
 }
 
 .pqe-cards{
@@ -190,72 +187,70 @@
 }
 
 .icono-pqe{
-    width: 80px;
-    height: 80px;
+    width: 48px;
+    height: 48px;
     margin: 0 auto 20px;
+    color: #22c55e;
+}
+
+.sub-titulo-pqe{
+  color: #fff;
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+.card-pqe .descripcion-pqe{
+  text-align: center;
+  color: #cbd5e1;
+  font-size: 0.95rem;
+  margin: 0;
+  max-width: none;
 }
 
 /* Nuestro proceso */
 
 .nuestro-proceso-section{
-    position: relative;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    overflow: hidden;
-    background: #0f172a;
+  width: 100%;
+  background: #0f172a;
+  padding: 80px 9% 60px;
+  text-align: center;
 }
 
 .container-np{
-    width: 100%;
-    color: #fff;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.nuestro-proceso{
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 15px;
-}
-
-.titulo-np{
-    color: #fff;
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 15px;
+.nuestro-proceso .descripcion-np{
+  color: #cbd5e1;
+  font-size: 0.95rem;
+  margin: 0;
+  max-width: none;
 }
 
 .sub-titulo-np{
-    text-align: center;
-    color: #fff;
-    margin-bottom: 60px;
-    margin-top: 20px;
-    font-size: 1.15rem;
-}
-
-.descripcion-np{
-    text-align: center;
-    color: #fff;
-    margin-bottom: 60px;
-    margin-top: 20px;
-    font-size: 1.15rem;
+  color: #fff;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
 }
 
 .procesos{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    margin-top: 60px;
-    position: relative;
-    gap: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 50px;
+  position: relative;
+  margin-top: 60px;
 }
 
 .icono-wrapper-np{
-  position: relative;      
+  position: relative;
   width: 80px;
   height: 80px;
-  border-radius: 50%;      
+  border-radius: 50%;
   border: 1px solid rgba(255,255,255,0.2);
+  background: #0f172a;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -265,6 +260,7 @@
 .icono-np{
   width: 32px;
   height: 32px;
+  color: #3b82f6;
 }
 
 .numero-np{
@@ -302,9 +298,11 @@
 
 .procesos-np{
   position: relative;
-  z-index: 1;                
-  flex: 1;
+  z-index: 1;
+  flex: 1 1 16%;
+  min-width: 140px;
   text-align: center;
+  padding: 0 10px;
 }
 
 /* Opiniones */
@@ -314,19 +312,8 @@
   padding: 100px 9% 60px;
   background: #0f172a;
 }
-.titulo-opiniones{
-    color: #fff;
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 15px;
-}
-
-.descripcion-opiniones{
-    text-align: center;
-    color: #fff;
-    margin-bottom: 60px;
-    margin-top: 20px;
-    font-size: 1.15rem;
+.titulo-opiniones .descripcion-opiniones{
+  padding: 0 9%;
 }
 
 .card-container{
@@ -351,6 +338,19 @@
   margin-bottom: 15px;
 }
 
+.comment{
+  color: #1e293b;
+  margin-bottom: 20px;
+  min-height: 90px;
+}
+
+.user-info{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+
 .avatar {
   width: 40px;
   height: 40px;
@@ -361,11 +361,25 @@
   align-items: center;
   justify-content: center;
   font-weight: bold;
+  font-weight: bold;
+  flex-shrink: 0;
 }
 
 .carrusel-wrapper{
   width: 100%;
   overflow: hidden;
+  margin-top: 40px;
+}
+
+.name{
+  color: #1e293b;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.status{
+  color: #64748b;
+  font-size: 0.85rem;
 }
 
 @keyframes desplazar{
@@ -383,25 +397,8 @@
 
 .container-contacto{
   width: 100%;
-  color: #fff;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 40px 20px;
-}
-
-.titulo-contacto{
-    color: #fff;
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 15px;
-}
-
-.descripcion-contacto{
-    text-align: center;
-    color: #fff;
-    margin-bottom: 60px;
-    margin-top: 20px;
-    font-size: 1.15rem;
 }
 
 .contacto-grid{
@@ -419,7 +416,6 @@
 
 .form-group{
   margin-bottom: 20px;;
-  color:black;
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -440,6 +436,11 @@
   background: rgba(255,255,255,0.05);
   color: #fff;
   font-size: 1rem;
+}
+
+.form-group select option{
+  background: #0f172a;
+  color: #fff;
 }
 
 .form-group textarea{
@@ -475,9 +476,7 @@
 }
 
 .contacto-maps{
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  min-height: 450px;
   flex: 1
 }
 
@@ -485,6 +484,7 @@
   width: 100%;
   height: 100%;
   min-height: 450px;
+  border:0;
   border-radius: 12px;
 }
 
@@ -501,6 +501,10 @@
   transition: background 0.2s ease;
 }
 
+.social-icon:hover{
+  background: #22c55e;
+}
+
 .social-icon svg{
   width: 18px;
   height: 18px;
@@ -511,4 +515,102 @@
   position: relative;
   display: inline-block;
   padding-bottom: 10px;
+}
+
+.footer-heading::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 30px;
+  height: 3px;
+  background: #22c55e;
+  border-radius: 2px;
+}
+
+/* Responsive */
+
+/* Tablets */
+@media (max-width: 1024px){
+  .servicios-cards,
+  .pqe-cards{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .procesos-np{
+    flex: 1 1 30%;
+  }
+}
+
+/* Celulares */
+@media (max-width: 768px){
+  body{
+    padding-top: 64px;
+  }
+
+  /* Banner: pasa a columna, imagen abajo del texto */
+  .banner{
+    flex-direction: column;
+    min-height: auto;
+    padding: 50px 6% 40px;
+    text-align: center;
+  }
+
+  .banner-texto,
+  .banner-imagen{
+    width: 100%;
+  }
+
+  .banner-texto h1{
+    font-size: 2.5rem;
+  }
+
+  .banner-imagen{
+    height: 280px;
+  }
+
+  /* Servicios / Por qué elegirnos: una columna */
+  .servicios-cards,
+  .pqe-cards{
+    grid-template-columns: 1fr;
+  }
+
+  .nuestros-servicios,
+  .titulo-pqe,
+  .titulo-np,
+  .titulo-opiniones,
+  .titulo-contacto{
+    font-size: 1.9rem;
+  }
+
+  /* Proceso: la línea conectora no tiene sentido con el wrap, se oculta */
+  .procesos::before{
+    display: none;
+  }
+
+  .procesos-np{
+    flex: 1 1 45%;
+  }
+
+  /* Contacto: form y mapa apilados */
+  .contacto-grid{
+    flex-direction: column;
+  }
+
+  .contacto-maps{
+    width: 100%;
+    min-height: 300px;
+  }
+
+  .contacto-maps iframe{
+    min-height: 300px;
+  }
+
+  /* Footer: columnas se apilan solas gracias a las clases de Tailwind ya presentes */
+}
+
+@media (max-width: 480px){
+  .procesos-np{
+    flex: 1 1 100%;
+  }
 }
