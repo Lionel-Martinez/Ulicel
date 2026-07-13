@@ -398,7 +398,7 @@
 
 .descripcion-contacto{
     text-align: center;
-    color: bla;
+    color: #fff;
     margin-bottom: 60px;
     margin-top: 20px;
     font-size: 1.15rem;
@@ -486,4 +486,29 @@
   height: 100%;
   min-height: 450px;
   border-radius: 12px;
+}
+
+/* footer */
+
+.social-icon{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease;
+}
+
+.social-icon svg{
+  width: 18px;
+  height: 18px;
+  color: #fff;
+}
+
+.footer-heading{
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
 }
