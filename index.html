@@ -284,6 +284,62 @@
   </div>
 </section>
 
+<!-- Contacto -->
+
+<section class="contacto">
+  <div class="container-contacto">
+    <h2 class="titulo-contacto">Contáctanos</h2>
+    <p class="descripcion-contacto">Estamos aquí para ayudarte</p>
+    <div class="contacto-grid">
+      <form action="" method="POST" class="formulario-contacto">
+        <div class="form-group">
+          <label for="service">Servicio</label>
+          <select id="service" name="service" required>
+            <option value="">Selecciona un servicio</option>
+            <option value="smartphones">Reparación de Smartphones</option>
+            <option value="tablets">Reparación de Tablets</option>
+            <option value="laptops">Reparación de Laptops</option>
+          </select>
+        </div>
+        <div class="form-group campos-extra" id="campos-celular">
+          <label for="marca">Marca</label>
+          <select id="marca" name="marca" required>
+            <option value="">Selecciona una marca</option>
+            <option value="apple">Apple</option>
+            <option value="samsung">Samsung</option>
+            <option value="motorola">Motorola</option>
+            <option value="xiaomi">Xiaomi</option>
+            <option value="otra">Otra</option>
+          </select>
+          <label for="modelo">Modelo</label>
+          <input type="text" id="modelo" name="modelo" placeholder="Ej: iPhone 12, Galaxy A30s" required>
+          <label for="falla">¿Qué problema tiene?</label>
+          <select id="falla" name="falla" required>
+            <option value="">Selecciona el problema</option>
+            <option value="pantalla">Pantalla rota</option>
+            <option value="bateria">Batería</option>
+            <option value="no-enciende">No enciende</option>
+            <option value="software">Problema de software</option>
+            <option value="otro">Otro</option>
+          </select>
+      </div>
+        <div class="form-group">
+          <label for="name">Nombre</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Otro problema</label>
+          <textarea id="message" name="message"></textarea>
+        </div>
+        <button type="submit" class="btn">Enviar Presupuesto</button>
+      </form>
+    </div>
+    <div class="contacto-maps">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3669.0444095786647!2d-64.32001182359272!3d-23.13205194596259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x940ff5f595506565%3A0xe8a57d0d8c3d29f8!2sUliCel!5e0!3m2!1ses!2sar!4v1783899988321!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </div>
+  </div>
+</section>
+  <script src="js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
 </body>
 </html>
