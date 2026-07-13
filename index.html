@@ -10,7 +10,7 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="Ulicel | Reparación de Celulares y Notebooks">
   <meta property="og:description" content="Soluciones rápidas, garantizadas y al mejor precio en Orán, Salta.">
-  <meta property="og:image" content="https://tudominio.com/img/og-image.jpg">
+  <meta property="og:image" content="https://tudominio.com/img/ulicel-logo.jpeg">
   <meta property="og:url" content="https://tudominio.com/">
   <meta property="og:locale" content="es_AR">
   <script src="https://cdn.tailwindcss.com"></script>
@@ -20,6 +20,26 @@
   <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/main.css">
   <link rel="icon" type="image/x-icon" href="img/ulicel-logo.jpeg">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ElectronicsStore",
+  "name": "Ulicel",
+  "image": "https://tudominio.com/img/ulicel-logo.jpeg",
+  "telephone": "+543878342800",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Av. Esquiú 437",
+    "addressLocality": "San Ramón de la Nueva Orán",
+    "addressRegion": "Salta",
+    "addressCountry": "AR"
+  },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "10:00", "closes": "21:30" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "10:00", "closes": "13:00" }
+  ]
+}
+</script>
 </head>
 <body>
   <!-- Navbar -->
@@ -27,7 +47,7 @@
 <nav class="bg-slate-900 fixed w-full z-20 top-0 start-0 border-b border-slate-700">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
     <a href="#inicio" class="flex items-center">
-        <img src="img/ulicel-logo.jpeg" class="h-7" alt="Flowbite Logo" />
+        <img src="img/ulicel-logo.jpeg" class="h-7" alt="Ulicel Logo" />
         <span class="self-center text-xl text-white font-semibold whitespace-nowrap">Ulicel</span>
     </a>
 
@@ -41,7 +61,7 @@
 
     <div class="hidden w-full md:block md:w-auto" id="navbar-default">
       <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-slate-700 rounded-base bg-slate-900 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-slate-900">
-          <li><a href="#inicio" class="block py-2 px-3 text-white rounded hover:bg-slate-800 md:hover:bg-transparent md:border-0 md:hover:text-emerald-400 md:p-0">Inicio</a></li>
+          <li><a href="#inicio" class="block py-2 px-3 text-white rounded hover:bg-slate-800 md:hover:bg-transparent md:border-0 md:hover:text-emerald-400 md:p-0" id="inicio">Inicio</a></li>
           <li><a href="#servicios" class="block py-2 px-3 text-white rounded hover:bg-slate-800 md:hover:bg-transparent md:border-0 md:hover:text-emerald-400 md:p-0">Servicios</a></li>
           <li><a href="#nosotros" class="block py-2 px-3 text-white rounded hover:bg-slate-800 md:hover:bg-transparent md:border-0 md:hover:text-emerald-400 md:p-0">Nosotros</a></li>
           <li><a href="#proceso" class="block py-2 px-3 text-white rounded hover:bg-slate-800 md:hover:bg-transparent md:border-0 md:hover:text-emerald-400 md:p-0">Proceso</a></li>
@@ -53,7 +73,7 @@
 </nav>
 
 <!-- Inicio -->
-<section class="banner">
+<section class="banner" id="inicio">
   <div class="banner-texto">
     <h1>Bienvenido <span> a Ulicel</span></h1>
     <p>Soluciones rápidas, garantizadas y al mejor precio. Traé tu dispositivo y nosotros nos encargamos de repararlo con la mayor calidad y profesionalismo</p>
@@ -74,17 +94,17 @@
       <p class="descripcion">Ofrecemos una amplia gama de servicios de reparación y mantenimiento para dispositivos electrónicos.</p>
     </div>
     <div class="servicios-cards">
-      <div class="card">
-        <img class="servicio-img" src="img/celular.svg" alt="icono de celular">
+      <div class="card bg-slate-900 border-t border-slate-800">
+        <img class="servicio-img" src="img/celular.svg" alt="icono de celular" >
         <h3 class="reparaciones">Reparación de Smartphones</h3>
         <p>Reparamos todo tipo de smartphones, desde pantallas rotas hasta problemas de software.</p>
       </div>
-      <div class="card">
+      <div class="card bg-slate-900 border-t border-slate-800">
         <img class="servicio-img" src="img/tablet.svg" alt="icono de tablet">
         <h3 class="reparaciones">Reparación de Tablets</h3>
         <p>Ofrecemos servicios de reparación para tablets, incluyendo reemplazo de baterías y pantallas.</p>
       </div>
-      <div class="card">
+      <div class="card bg-slate-900 border-t border-slate-800">
         <img class="servicio-img" src="img/laptop.svg" alt="icono de laptop">
         <h3 class="reparaciones">Reparación de Laptops</h3>
         <p>Solucionamos problemas de hardware y software en laptops de todas las marcas.</p>
@@ -226,7 +246,7 @@
 
 <!-- Opiniones -->
 
-<section class="opiniones">
+<section class="opiniones" id="opiniones">
   <div>
     <h1 class="titulo-opiniones">Opiniones de nuestros clientes</h1>
     <p class="descripcion-opiniones">Nuestros clientes están satisfechos con nuestro servicio. Aquí hay algunas opiniones de ellos:</p>
@@ -373,7 +393,7 @@
 
 <!-- Contacto -->
 
-<section class="contacto">
+<section class="contacto" id="contacto">
   <div class="container-contacto">
     <h2 class="titulo-contacto">Contáctanos</h2>
     <p class="descripcion-contacto">Estamos aquí para ayudarte</p>
@@ -429,45 +449,48 @@
 
 <!-- Footer -->
 
+<!-- Footer -->
 <footer class="bg-slate-900 border-t border-slate-800">
     <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div class="md:flex md:justify-between">
           <div class="mb-6 md:mb-0">
-              <a href="#Inicio" class="flex items-center">
+              <a href="#Inicio" class="flex items-center mb-4">
                   <img src="img/ulicel-logo.jpeg" class="h-7 me-3" alt="Ulicel Logo" />
                   <span class="text-heading self-center text-2xl font-semibold text-white uppercase">Ulicel</span>
               </a>
-          <div>
-            <p class="text-sm text-white uppercase">Horarios de atencion</p>
-            <p class="text-sm text-white uppercase">Lunes a Viernes: 10:00 AM - 9:30 PM</p>
-            <p class="text-sm text-white uppercase">Sabados: 10:00 AM - 9:30 PM</p>
+              <div>
+                <p class="text-sm text-white font-semibold uppercase mb-2">Horarios de atención</p>
+                <p class="text-sm text-white">Lunes a Viernes: 10:00 AM - 9:30 PM</p>
+                <p class="text-sm text-white">Sábados: 10:00 AM - 9:30 PM</p>
+              </div>
           </div>
-          </div>
+          
           <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
               <div>
                   <h2 class="mb-6 text-sm font-semibold text-heading text-white uppercase">Contacto</h2>
                   <ul class="text-body font-medium">
-                      <li class="mb-4">
-                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                      <li class="mb-4 flex items-center">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 shrink-0 text-white">
                             <path fill-rule="evenodd" d="m11.54 22.351.07.04.028.016a.76.76 0 0 0 .723 0l.028-.015.071-.041a16.975 16.975 0 0 0 1.144-.742 19.58 19.58 0 0 0 2.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 0 0-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 0 0 2.682 2.282 16.975 16.975 0 0 0 1.145.742ZM12 13.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" clip-rule="evenodd" />
-                            </svg>
-                            <span class="text-sm text-white uppercase">Av. Esquiú 437,</span>
+                          </svg>
+                          <span class="ms-3 text-sm text-white">Av. Esquiú 437</span>
                       </li>
-                      <li>
-                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                      <li class="mb-4 flex items-center">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 shrink-0 text-white">
                             <path fill-rule="evenodd" d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z" clip-rule="evenodd" />
                           </svg>
-                          <span class="ms-3 text-sm text-white uppercase">+54 11 4321-5678</span>          
+                          <span class="ms-3 text-sm text-white">+54 11 4321-5678</span>          
                       </li>
-                      <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                      <li class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 shrink-0 text-white">
                           <path d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z" />
                           <path d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z" />
                         </svg>
-                        <span class="ms-3 text-sm text-white uppercase">info@ulicel.com</span>
+                        <span class="ms-3 text-sm text-white">info@ulicel.com</span>
                       </li>
                   </ul>
               </div>
+              
               <div>
                   <h2 class="footer-heading mb-6 text-sm font-semibold text-white uppercase">Redes Sociales</h2>
                   <p class="text-slate-400 text-sm mb-4">Seguinos para ver trabajos diarios y promociones.</p>
@@ -481,46 +504,25 @@
                     <a href="https://wa.me/543878342800" class="social-icon" aria-label="WhatsApp">
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347Z"/></svg>
                     </a>
-  </div>
-</div>
+                  </div>
+              </div>
           </div>
       </div>
-      <hr class="my-6 border-default sm:mx-auto lg:my-8" />
-      <div class="sm:flex sm:items-center sm:justify-between">
-          <span class="text-sm text-body sm:text-center">© 2023 <a href="#" class="hover:underline">Ulicel™</a>. Todos los derechos reservados 2019 - 2026.
+      <hr class="my-6 border-slate-700 sm:mx-auto lg:my-8" />
+      <div class="sm:flex sm:items-center sm:justify-between mx-auto w-full max-w-screen-xl p-4">
+          <span class="text-sm text-slate-400 sm:text-center">© 2026 <a href="#" class="hover:underline text-white">Ulicel™</a>. Todos los derechos reservados.
           </span>
       </div>
-    </div>
 </footer>
 
 <!-- Boton hacia arriba -->
-<a href="#top" class="fixed bottom-4 right-4 bg-blue-500 text-white p-2 rounded-full hover:bg-blue-600">
+<a href="#inicio" class="fixed bottom-4 right-4 bg-emerald-500 text-white p-2 rounded-full hover:bg-emerald-600 shadow-lg" aria-label="Volver arriba">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-        <path d="M11.47 3.841a.75.75 0 0 1 1.06 0l8.69 8.69a.75.75 0 1 1-1.06 1.06l-7.81-7.81-7.81 7.81a.75.75 0 1 1-1.06-1.06l8.69-8.69Z"/>
+      <path d="M11.47 3.841a.75.75 0 0 1 1.06 0l8.69 8.69a.75.75 0 1 1-1.06 1.06l-7.81-7.81-7.81 7.81a.75.75 0 1 1-1.06-1.06l8.69-8.69Z"/>
     </svg>
-</a>
+  </a>
 
   <script src="js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ElectronicsStore",
-  "name": "Ulicel",
-  "image": "https://tudominio.com/img/ulicel-logo.jpeg",
-  "telephone": "+543878342800",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Av. Esquiú 437",
-    "addressLocality": "San Ramón de la Nueva Orán",
-    "addressRegion": "Salta",
-    "addressCountry": "AR"
-  },
-  "openingHoursSpecification": [
-    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "10:00", "closes": "21:30" },
-    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "10:00", "closes": "13:00" }
-  ]
-}
-</script>
 </body>
 </html>
